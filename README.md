@@ -11,3 +11,4 @@
 - [Mandatory] Add Book With Complete Data [PASS]
 - [Mandatory] Add Book Without Name [PASS]
 - [Mandatory] Add Book with Page Read More Than Page Count [PASS]
+- [Mandatory] Get All Books [PASS]
