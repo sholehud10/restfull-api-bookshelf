@@ -20,3 +20,8 @@
 - [Mandatory] Update Book with Invalid Id [PASS]
 - [Mandatory] Delete Book with Correct Id [PASS]
 - [Mandatory] Delete Book with Invalid Id [PASS]
+- [Optional] Get All Reading Books [PASS]
+- [Optional] Get All Unreading Books [PASS]
+- [Optional] Get All Finished Books [PASS]
+- [Optional] Get All Unfinished Books [PASS]
+- [Optional] Get All Books Contains "Dicoding" Name [PASS]
