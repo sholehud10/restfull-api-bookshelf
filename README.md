@@ -18,3 +18,5 @@
 - [Mandatory] Update Book Without Name [PASS]
 - [Mandatory] Update Book With Page Read More Than Page Count [PASS]
 - [Mandatory] Update Book with Invalid Id [PASS]
+- [Mandatory] Delete Book with Correct Id [PASS]
+- [Mandatory] Delete Book with Invalid Id [PASS]
