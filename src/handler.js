@@ -1,6 +1,5 @@
 const { nanoid } = require('nanoid');
-
-const Books = require('./books');
+const books = require('./books');
 
 const addBookHandler = (request, h) => {
   const {
@@ -33,10 +32,6 @@ const addBookHandler = (request, h) => {
     updateAt,
   };
 
-  Books.push(addNewBook);
-
-  const isSuccess = Books.filter((book) => book.id === id).length > 0;
-
   if (name === undefined) {
     const response = h.response({
       status: 'fail',
@@ -55,6 +50,10 @@ const addBookHandler = (request, h) => {
     response.code(400);
     return response;
   }
+
+  books.push(addNewBook);
+
+  const isSuccess = books.filter((book) => book.id === id).length > 0;
 
   if (isSuccess) {
     const response = h.response({
@@ -76,4 +75,15 @@ const addBookHandler = (request, h) => {
   return response;
 };
 
-module.exports = { addBookHandler };
+const getAllBooksHandler = () => ({
+  status: 'success',
+  data: {
+    books: books.map((book) => ({
+      id: book.id,
+      name: book.name,
+      publisher: book.publisher,
+    })),
+  },
+});
+
+module.exports = { getAllBooksHandler, addBookHandler };
