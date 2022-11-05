@@ -77,17 +77,6 @@ const addBookHandler = (request, h) => {
   return response;
 };
 
-// const getAllBooksHandler = () => ({
-//   status: 'success',
-//   data: {
-//     books: books.map((book) => ({
-//       id: book.id,
-//       name: book.name,
-//       publisher: book.publisher,
-//     })),
-//   },
-// });
-
 const getAllBooksHandler = (request, h) => {
   const { reading, finished, name } = request.query;
 
