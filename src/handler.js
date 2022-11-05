@@ -77,16 +77,84 @@ const addBookHandler = (request, h) => {
   return response;
 };
 
-const getAllBooksHandler = () => ({
-  status: 'success',
-  data: {
-    books: books.map((book) => ({
-      id: book.id,
-      name: book.name,
-      publisher: book.publisher,
-    })),
-  },
-});
+// const getAllBooksHandler = () => ({
+//   status: 'success',
+//   data: {
+//     books: books.map((book) => ({
+//       id: book.id,
+//       name: book.name,
+//       publisher: book.publisher,
+//     })),
+//   },
+// });
+
+const getAllBooksHandler = (request, h) => {
+  const { reading, finished, name } = request.query;
+
+  if (reading !== undefined) {
+    const response = h.response({
+      status: 'success',
+      data: {
+        books: books
+          .filter((book) => book.reading == reading)
+          .map((book) => ({
+            id: book.id,
+            name: book.name,
+            publisher: book.publisher,
+          })),
+      },
+    });
+    response.code(200);
+    return response;
+  }
+
+  if (finished !== undefined) {
+    const response = h.response({
+      status: 'success',
+      data: {
+        books: books
+          .filter((book) => book.finished == finished)
+          .map((book) => ({
+            id: book.id,
+            name: book.name,
+            publisher: book.publisher,
+          })),
+      },
+    });
+    response.code(200);
+    return response;
+  }
+
+  if (name !== undefined) {
+    const response = h.response({
+      status: 'success',
+      data: {
+        books: books
+          .filter((b) => b.name.toLowerCase().includes(name.toLowerCase()))
+          .map((book) => ({
+            id: book.id,
+            name: book.name,
+            publisher: book.publisher,
+          })),
+      },
+    });
+    response.code(200);
+    return response;
+  }
+
+  const response = h.response({
+    status: 'success',
+    data: {
+      books: books.map((book) => ({
+        id: book.id,
+        name: book.name,
+        publisher: book.publisher,
+      })),
+    },
+  });
+  response.code(200);
+  return response;
+};
 
 const getDetailBookHandler = (request, h) => {
   const { id } = request.params;
