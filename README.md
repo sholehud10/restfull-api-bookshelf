@@ -12,3 +12,5 @@
 - [Mandatory] Add Book Without Name [PASS]
 - [Mandatory] Add Book with Page Read More Than Page Count [PASS]
 - [Mandatory] Get All Books [PASS]
+- [Mandatory] Get Detail Books With Correct Id [PASS]
+- [Mandatory] Get Detail Books With Invalid Id [PASS]
