@@ -14,3 +14,7 @@
 - [Mandatory] Get All Books [PASS]
 - [Mandatory] Get Detail Books With Correct Id [PASS]
 - [Mandatory] Get Detail Books With Invalid Id [PASS]
+- [Mandatory] Update Book With Complete Data [PASS]
+- [Mandatory] Update Book Without Name [PASS]
+- [Mandatory] Update Book With Page Read More Than Page Count [PASS]
+- [Mandatory] Update Book with Invalid Id [PASS]
