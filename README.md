@@ -1,17 +1,5 @@
 # RESTful API
 
-Install semua package
-
-```
-npm install
-```
-
-Jalankan server localhost:5000
-
-```
-npm run serve
-```
-
 Package yang terinstall
 
 ```
@@ -21,10 +9,24 @@ npm install @hapi/hapi
 npm install nanoid@3.x.x
 ```
 
+atau
+
+Install semua package
+
+```
+npm install
+```
+
 Konfigurasi ESlint
 
 ```
 npx eslint --init
+```
+
+Jalankan server localhost:5000
+
+```
+npm run serve
 ```
 
 # Data Test
