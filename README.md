@@ -1,27 +1,48 @@
 # RESTful API
 
-- npm install nodemon --save-dev
-- npm install eslint --save-dev
-- npm install @hapi/hapi
-- npm install nanoid@3.x.x
-- npx eslint --init
+install semua package
 
-## Testing API in POSTMAN
+```
+npm install
+```
 
-- [Mandatory] Add Book With Complete Data [PASS]
-- [Mandatory] Add Book Without Name [PASS]
-- [Mandatory] Add Book with Page Read More Than Page Count [PASS]
-- [Mandatory] Get All Books [PASS]
-- [Mandatory] Get Detail Books With Correct Id [PASS]
-- [Mandatory] Get Detail Books With Invalid Id [PASS]
-- [Mandatory] Update Book With Complete Data [PASS]
-- [Mandatory] Update Book Without Name [PASS]
-- [Mandatory] Update Book With Page Read More Than Page Count [PASS]
-- [Mandatory] Update Book with Invalid Id [PASS]
-- [Mandatory] Delete Book with Correct Id [PASS]
-- [Mandatory] Delete Book with Invalid Id [PASS]
-- [Optional] Get All Reading Books [PASS]
-- [Optional] Get All Unreading Books [PASS]
-- [Optional] Get All Finished Books [PASS]
-- [Optional] Get All Unfinished Books [PASS]
-- [Optional] Get All Books Contains "Dicoding" Name [PASS]
+jalankan server localhost:5000
+
+```
+npm run serve
+```
+
+package yang terinstall
+
+```
+npm install nodemon --save-dev
+npm install eslint --save-dev
+npm install @hapi/hapi
+npm install nanoid@3.x.x
+```
+
+konfigurasi eslint
+
+```
+npx eslint --init
+```
+
+# Data Testing
+
+- [x] Add Book With Complete Data
+- [x] Add Book Without Name
+- [x] Add Book with Page Read More Than Page Count
+- [x] Get All Books
+- [x] Get Detail Books With Correct Id
+- [x] Get Detail Books With Invalid Id
+- [x] Update Book With Complete Data
+- [x] Update Book Without Name
+- [x] Update Book With Page Read More Than Page Count
+- [x] Update Book with Invalid Id
+- [x] Delete Book with Correct Id
+- [x] Delete Book with Invalid Id
+- [x] Get All Reading Books
+- [x] Get All Unreading Books
+- [x] Get All Finished Books
+- [x] Get All Unfinished Books
+- [x] Get All Books Contains "Dicoding"
