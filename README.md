@@ -1,18 +1,18 @@
 # RESTful API
 
-install semua package
+Install semua package
 
 ```
 npm install
 ```
 
-jalankan server localhost:5000
+Jalankan server localhost:5000
 
 ```
 npm run serve
 ```
 
-package yang terinstall
+Package yang terinstall
 
 ```
 npm install nodemon --save-dev
@@ -21,13 +21,13 @@ npm install @hapi/hapi
 npm install nanoid@3.x.x
 ```
 
-konfigurasi eslint
+Konfigurasi ESlint
 
 ```
 npx eslint --init
 ```
 
-# Data Testing
+# Data Test
 
 - [x] Add Book With Complete Data
 - [x] Add Book Without Name
@@ -45,4 +45,4 @@ npx eslint --init
 - [x] Get All Unreading Books
 - [x] Get All Finished Books
 - [x] Get All Unfinished Books
-- [x] Get All Books Contains "Dicoding"
+- [x] Get All Books Contains "Hapi Framework"
